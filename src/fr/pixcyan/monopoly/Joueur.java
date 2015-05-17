@@ -1,7 +1,6 @@
 package fr.pixcyan.monopoly;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -12,10 +11,10 @@ import java.util.Set;
 public class Joueur {
     private String nom;
     private Pions pion;
-    private Integer argent;
+    private int argent;
     private Set<Propriete> proprietesPossedes;
 
-    public Joueur(String nom, Pions pion, Integer argent) {
+    public Joueur(String nom, Pions pion, int argent) {
         this.nom = nom;
         this.pion = pion;
         this.argent = argent;
@@ -30,9 +29,7 @@ public class Joueur {
     }
 
     public void afficheProprietesJoueur() {
-        Iterator<Propriete> proprietes = proprietesPossedes.iterator();
-        while(proprietes.hasNext()) {
-            Propriete p = proprietes.next();
+        for (Propriete p : proprietesPossedes) {
             //TODO : affichage detail propriete => vérifier si ca marche
             p.afficheDetailsPropriete();
         }
@@ -57,7 +54,7 @@ public class Joueur {
         return this.pion;
     }
 
-    public Integer getArgent() {
+    public int getArgent() {
         return this.argent;
     }
 

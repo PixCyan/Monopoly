@@ -25,7 +25,7 @@ public class Propriete {
     }
 
     public Couleur getCouleur() {
-        return  this.couleur;
+        return this.couleur;
     }
 
     //------ Setters ------//

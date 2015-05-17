@@ -26,20 +26,20 @@ public class Menu {
             System.out.println("================================");
             choix = entree.nextInt();
 
-            switch(choix) {
-                case 1 :
+            switch (choix) {
+                case 1:
                     jeu.inscrireJoueur();
                     break;
-                case 2 :
+                case 2:
                     jeu.commencerJeu();
                     break;
-                case 3 :
+                case 3:
                     jeu.afficherListeJoueurs();
                     break;
                 default:
                     break;
             }
-        } while(choix != 4);
+        } while (choix != 4);
     }
 }
 

@@ -9,9 +9,9 @@ import java.util.Random;
  */
 public class De {
     private static final Random random = new Random();
-    private Integer resultat;
-    private Integer de1;
-    private Integer de2;
+    private int resultat;
+    private int de1;
+    private int de2;
 
     public De() {
         initDe();
@@ -25,15 +25,16 @@ public class De {
 
 
     //------ Getters ------//
-    public Integer getDe1() {
-        return this.de1;
+
+    public int getResultat() {
+        return resultat;
     }
 
-    public Integer getDe2() {
-        return this.de2;
+    public int getDe1() {
+        return de1;
     }
 
-    public Integer getResultat() {
-        return this.resultat;
+    public int getDe2() {
+        return de2;
     }
 }
